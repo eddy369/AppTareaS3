@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTareaS3.viewDos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="CALCULA TU PROMEDIO" HorizontalTextAlignment="Center" TextColor="White" FontSize="28"/>
+            </Frame>
+            <Grid>
+                <Image Source="fondo2.jpg" Aspect="AspectFill" Opacity="0.2"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Label Text="PARCIAL 1" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="22"/>
+                    <Label Text="Inserte Nota Seguimiento 1" TextColor="Black" Grid.Row="1" Grid.Column="0" FontSize="18"/>
+                    <Entry x:Name="txtNota1" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" TextChanged="txtNota1_TextChanged" FontSize="18"/>
+                    <Label Text="Inserte Nota de Examen 1" TextColor="Black" Grid.Row="2" Grid.Column="0" FontSize="18"/>
+                    <Entry x:Name="txtExamen" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" TextChanged="txtExamen_TextChanged" FontSize="18"/>
+
+                    <Entry x:Name="txtParcial1" Placeholder="Tu NP1 es" PlaceholderColor="Black" IsReadOnly="True" TextColor="Red" Grid.Row="3" Grid.Column="0" FontSize="18"/>
+
+                    <Label Text="PARCIAL 2" TextColor="Black" Grid.Row="5" Grid.Column="0" FontSize="22"/>
+                    <Label Text="Inserte Nota Seguimiento 2" TextColor="Black" Grid.Row="6" Grid.Column="0" FontSize="18"/>
+                    <Entry x:Name="txtNota2" Keyboard="Numeric" Grid.Row="6" Grid.Column="1" TextChanged="txtNota2_TextChanged" FontSize="18"/>
+                    <Label Text="Inserte Nota de Examen 2" TextColor="Black" Grid.Row="7" Grid.Column="0" FontSize="18"/>
+                    <Entry x:Name="txtExamen2" Keyboard="Numeric" Grid.Row="7" Grid.Column="1" TextChanged="txtExamen2_TextChanged" FontSize="18"/>
+
+                    <Entry x:Name="txtParcial2" Placeholder="Tu NP2 es" PlaceholderColor="Black" IsReadOnly="True" TextColor="Red" Grid.Row="8" Grid.Column="0" FontSize="18"/>
+
+                    <Entry x:Name="txtNotaFinal" Placeholder="Nota Final" PlaceholderColor="Black" IsReadOnly="True" TextColor="Red" Grid.Row="9" Grid.Column="0" FontSize="22"/>
+                    <Entry x:Name="txtEvaluado" IsReadOnly="True" TextColor="Red" VerticalTextAlignment="End" Grid.Row="9" Grid.Column="1" FontSize="22"/>
+
+                    <Button x:Name="btnResultado" Text="Calcular" Clicked="btnResultado_Clicked" TextColor="White" BackgroundColor="DarkMagenta" BorderColor="Yellow" BorderWidth="3" Grid.Row="10" Grid.Column="1" FontSize="22"/>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

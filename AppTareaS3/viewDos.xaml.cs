@@ -44,6 +44,7 @@ namespace AppTareaS3
             double nf = parcial1 + parcial2;
             txtNotaFinal.Text = Convert.ToString(nf);
 
+            //creo un string para comentario
             string comentario = "";
             try
             {
